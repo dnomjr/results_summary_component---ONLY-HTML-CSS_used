@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github link](https://your-solution-url.com)
-- Live Site URL: [Results summary component](https://your-live-site-url.com)
+- Live Site URL: [Results summary component](https://results-summ-component.netlify.app/)
 
 
 ### Built with
