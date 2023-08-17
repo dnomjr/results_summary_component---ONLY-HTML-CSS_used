@@ -1,0 +1,347 @@
+:root {
+  /* PRIMARY COLORS */
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+html {
+  font-size: 1.125rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 46.25rem;
+  height: 31.875rem;
+  display: flex;
+  box-shadow: 0.9375rem 0.9375rem 1.5625rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.875rem;
+  margin-top: auto;
+}
+
+/* LEFT SIDE of COMPONENT */
+
+.left-side {
+  width: 100%;
+  border-radius: 1.875rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+}
+
+.left-side > h1 {
+  color: hsl(243, 90%, 88%);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  text-align: center;
+}
+
+.circle > h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 4.375rem;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 3.125rem;
+}
+
+.circle > h2 {
+  color: hsla(243, 90%, 88%, 0.551);
+  margin: 0;
+  font-size: 1.125rem;
+  margin-top: -0.9375rem;
+}
+
+article {
+  width: 15.625rem;
+  margin: 0 auto;
+}
+
+article h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+}
+
+article p {
+  color: hsl(243, 90%, 88%);
+}
+
+/* RIGHT SIDE of COMPONENT */
+
+.right-side {
+  width: 100%;
+  border-radius: 1.875rem;
+  padding-left: 2.1875rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.right-side > h1 {
+  color: hsl(224, 30%, 27%);
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2.5rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.right-side ul li {
+  list-style: none;
+  width: 18.125rem;
+  height: 3.75rem;
+  background-color: red;
+  margin-bottom: 1.25rem;
+  border-radius: 0.625rem;
+  font-weight: 700;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+.reaction {
+  margin: 0 0.625rem 0 1.25rem;
+}
+
+.react {
+  /*  margin-left: 115px; */
+  margin-left: auto;
+  margin-right: 1.25rem;
+  color: hsl(224, 30%, 27%);
+}
+
+.react span:nth-child(2) {
+  color: hsl(285, 6%, 73%);
+}
+
+ul li:nth-child(1) {
+  color: var(--light-red);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+ul li:nth-child(2) {
+  color: var(--orange-yellow);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+ul li:nth-child(3) {
+  color: var(--green-teal);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+ul li:nth-child(4) {
+  color: var(--cobalt-blue);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+button {
+  width: 18.125rem;
+  height: 3.75rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1.875rem;
+  margin-top: 0.625rem;
+}
+
+button:hover,
+button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 850px) {
+  html {
+    background-color: #202020;
+  }
+
+  main {
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .circle {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-top: 15px;
+  }
+
+  .circle > h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .circle > h2 {
+    color: hsla(243, 90%, 88%, 0.551);
+    margin: 0;
+    font-size: 14px;
+    margin-top: -0.9375rem;
+  }
+
+  .left-side > h1 {
+    color: hsl(243, 90%, 88%);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .left-side {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 375px;
+    height: 365px;
+    position: relative;
+    z-index: 2;
+  }
+
+  article {
+    width: 15.625rem;
+    margin: 0 auto;
+  }
+
+  article h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  article p {
+    color: hsl(243, 90%, 88%);
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  /* DOWN SIDE of COMPONENT */
+
+  .right-side {
+    width: 335.625px;
+    border-radius: 1.875rem;
+    padding-left: 2.1875rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 300px;
+  }
+
+  .right-side > h1 {
+    color: hsl(224, 30%, 27%);
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .right-side ul li {
+    list-style: none;
+    width: 315px;
+    height: 55px;
+    background-color: red;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    font-weight: 700;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .reaction {
+    margin: 0 0.625rem 0 1.25rem;
+  }
+
+  .react {
+    margin-left: auto;
+    margin-right: 1.25rem;
+    color: hsl(224, 30%, 27%);
+  }
+
+  .react span:nth-child(2) {
+    color: hsl(285, 6%, 73%);
+  }
+
+  ul li:nth-child(1) {
+    color: var(--light-red);
+    background-color: hsla(0, 100%, 67%, 0.1);
+  }
+
+  ul li:nth-child(2) {
+    color: var(--orange-yellow);
+    background-color: hsl(39, 100%, 56%, 0.1);
+  }
+
+  ul li:nth-child(3) {
+    color: var(--green-teal);
+    background-color: hsl(166, 100%, 37%, 0.1);
+  }
+
+  ul li:nth-child(4) {
+    color: var(--cobalt-blue);
+    background-color: hsl(234, 85%, 45%, 0.1);
+  }
+
+  button {
+    width: 18.125rem;
+    height: 3.75rem;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 1.875rem;
+    margin-top: 0.625rem;
+    margin-bottom: 40px;
+  }
+
+  button:hover,
+  button:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
