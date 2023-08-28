@@ -14,6 +14,8 @@ This is a solution to the Results summary component.
 
 ## Overview
 
+### The challenge
+
 Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
